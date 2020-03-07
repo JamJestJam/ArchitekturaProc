@@ -12,6 +12,8 @@ namespace ArchitektuaV._001
 {
     public partial class Form1 : Form
     {
+        //RAM
+        Dictionary<int, string> RAM = new Dictionary<int, string>();
         //textbox location
         int TextBoxLocationX = 300;
         int TextBoxLocationY = 25;
@@ -440,7 +442,7 @@ namespace ArchitektuaV._001
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Tick(object sender, EventArgs e)
