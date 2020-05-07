@@ -4,14 +4,29 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{60FAC670-049C-4447-BC14-690777FB31BE}</ProjectGuid>
+    <ProjectGuid>{CDBD95F7-5C93-485F-BF51-43DBD3AB76B4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ArchitektuaV._001</RootNamespace>
-    <AssemblyName>ArchitektuaV.001</AssemblyName>
+    <RootNamespace>intel8086v2</RootNamespace>
+    <AssemblyName>intel8086v2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publikuj\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +61,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Form1\CalcRamAddr.cs" />
+    <Compile Include="Class\Form1\ExchangeOfRegisters.cs" />
+    <Compile Include="Class\Form1\Data.cs" />
+    <Compile Include="Class\Form1\EventInit.cs" />
+    <Compile Include="Class\Form1\LEA.cs" />
+    <Compile Include="Class\Form1\MOV.cs" />
+    <Compile Include="Class\Form1\PUSH_POP.cs" />
+    <Compile Include="Class\Form1\SwapSystems.cs" />
+    <Compile Include="Class\Form1\Init.cs" />
+    <Compile Include="Class\Form1\RandomRegistersContent.cs" />
+    <Compile Include="Class\Form1\Reset.cs" />
+    <Compile Include="Class\Form1\Start.cs" />
+    <Compile Include="Class\Form1\XCHG.cs" />
+    <Compile Include="Class\Form1\XLAT.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +107,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 i x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

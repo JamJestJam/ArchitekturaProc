@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ArchitektuaV._001.Properties
+namespace intel8086v2.Properties
 {
 
 
